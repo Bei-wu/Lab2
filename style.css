@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff9e6;
+    color: #333;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    color: #b8860b;
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+body > p {
+    color: #8a6d1d;
+    margin-bottom: 30px;
+}
+
+
+/* Coffee Menu */
+
+.coffee-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px auto 30px;
+}
+
+
+/* Coffee Cards */
+
+.coffee-card {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    border: 1px solid #f0d98a;
+    border-radius: 10px;
+}
+
+.coffee-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.coffee-card h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* Customize and Order */
+
+body > div:not(.coffee-menu) {
+    background-color: #fff4cc;
+    width: 280px;
+    margin: 18px auto;
+    padding: 22px;
+    border: 1px solid #f0d98a;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: #e0a800;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #b8860b;
+}
+
+
+/* Responsive Layout */
+
+@media (max-width: 800px) {
+
+    .coffee-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coffee-card {
+        width: 280px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 25px 10px;
+    }
+
+    .coffee-card {
+        width: 85%;
+    }
+
+    body > div:not(.coffee-menu) {
+        width: 85%;
+    }
+
+}
